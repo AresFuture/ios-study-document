@@ -32,3 +32,24 @@
 [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(hideHUD) userInfo:nil repeats:NO];
 // repeats如果为YES，意味着每个1.5S都会调用一次self的hidHUD方法
 ```
+
+## 常见问题
+- 项目里面的某个.m文件无法使用
+    - 检查：BuildPhases -> Compile Sources
+- 项目里面的某个资源文件（比如plist、音频等）无法使用
+    - 检查：BuildPhases -> Copy Bundle Resources
+
+## 模型
+- 什么是模型？
+    - 专门用来存储数据的对象
+    - 一般都是一些直接继承自NSObject的纯对象
+    - 内部会提供一些属性来存放数据
+   
+## 一个控件看不见有哪些可能？
+    - 宽度或者高度为0
+    - 位置不对（比如是个负数或者超大的数，已经超出屏幕）
+    - hidden == YES
+    - alpha <= 0.01
+    - 没有设置背景色，没有设置内容
+    - 可能是文字和背景色一样
+ 
