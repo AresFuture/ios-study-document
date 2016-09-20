@@ -18,7 +18,7 @@
 -(void) insertSubView:(UIView *）view belowSubview:(UIView *) subView;
 
 // 将子控件view放到数组的最后面，显示在最上面
--(void)bringSubViewToFont:(UIView *) view;
+-(void)bringSubviewToFront:(UIView *) view;
 // 将子控件view显示到子控件siblingSubview的上面
 - (void)insertSubview:(UIView *)view aboveSubview:(UIView *)siblingSubview;
 
