@@ -25,3 +25,10 @@
  });
 
 ```
+
+- 方法3：NSTimer
+
+```objc
+[NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(hideHUD) userInfo:nil repeats:NO];
+// repeats如果为YES，意味着每个1.5S都会调用一次self的hidHUD方法
+```
