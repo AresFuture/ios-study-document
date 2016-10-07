@@ -7,4 +7,5 @@
     * [BaseWidgetUsage](basewidgetusage.md)
     * [UIScrollView](uiscrollview.md)
     * [CustomView](customview.md)
+    * [ScreenAutoLayout](screen.md)
 
