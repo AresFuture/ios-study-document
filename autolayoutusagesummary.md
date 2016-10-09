@@ -58,3 +58,22 @@
     #import "Masonry.h"
 
     ```
+
+- 添加约束的方法
+
+```objc
+ // 这个方法只会添加新的约束
+ [blueView makeConstraints:^(MASConstraintMaker *make) {
+
+ }];
+
+ // 这个方法将以前的约束删除，添加新的约束
+ [blueView remakeConstraints:^(MASConstraintMaker *make) {
+
+ }];
+
+ // 这个方法将会覆盖以前的某些特定约束
+ [blueView updateConstraints:^(MASConstraintMaker *make) {
+
+ }];
+```
