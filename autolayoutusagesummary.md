@@ -19,7 +19,7 @@
 - (void)addConstraint:(NSLayoutConstraint *)constraint;
 
 - (void)addConstraints:(NSArray *)constraints;
-
+// 注意：一定要在拥有父控件的之后再添加约束
 ```
 
 ## 使用代码实现AutoLayout的方法2 - VFL
