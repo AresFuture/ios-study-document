@@ -15,6 +15,13 @@
 
 - 添加约束
 
+```objc
+- (void)addConstraint:(NSLayoutConstraint *)constraint;
+
+- (void)addConstraints:(NSArray *)constraints;
+
+```
+
 ## 使用代码实现AutoLayout的方法2 - VFL
 
 ## 使用代码实现AutoLayout的方法3 - Masonry
