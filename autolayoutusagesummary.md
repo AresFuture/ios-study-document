@@ -79,6 +79,14 @@
 ```
 
 - 约束的类型
+
 ```objc
+/*
+ * 约束类型：
+ * 1.尺寸约束：width\height\size
+ * 2.边界约束：lef\leading\right\trailing\top\bottom
+ * 3.中心点约束：center\centerX\centerY
+ * 4.边界约束：edges
+ */
 
 ```
