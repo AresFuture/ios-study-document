@@ -1,5 +1,6 @@
 ## 使用代码实现AutoLayout的方法1
-- 创建约束
+
+* 创建约束
 
 ```objc
 +(id)constraintWithItem:(id)view1 attribute:(NSLayoutAttribute)attr1 relatedBy:(NSLayoutRelation)relation toItem:(id)view2 attribute:(NSLayoutAttribute)attr2 multiplier:(CGFloat)multiplier constant:(CGFloat)c;
@@ -13,25 +14,26 @@
 * c ：常量
 ```
 
-- 添加约束
+* 添加约束
 
 ```objc
 - (void)addConstraint:(NSLayoutConstraint *)constraint;
 
 - (void)addConstraints:(NSArray *)constraints;
-
 ```
-- 注意：
-    - 一定要在拥有父控件之后再添加约束
-    - 关闭Autoresizing功能
+
+* 注意：
+
+  * 一定要在拥有父控件之后再添加约束
+  * 关闭Autoresizing功能
+
     ```objc
     view.translatesAutoresizingMaskIntoConstraints = NO;
-
     ```
+
 
 
 ## 使用代码实现AutoLayout的方法2 - VFL
 
-
-
 ## 使用代码实现AutoLayout的方法3 - Masonry
+
