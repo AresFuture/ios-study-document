@@ -49,4 +49,12 @@
 
 ## 使用代码实现AutoLayout的方法3 - Masonry
 
-- 添加约束
+- 使用步骤
+    - 添加Masonry文件夹的所有源文件到项目中
+    - 添加2个宏，导入主头文件
+    ```objc
+    #define MAS_SHORTHAND
+    #define MAS_SHORTHAND_GLOBALS
+    #import "Masonry.h"
+
+    ```
