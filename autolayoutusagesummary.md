@@ -36,7 +36,12 @@
 ## 使用代码实现AutoLayout的方法2 - VFL
 - 使用VFL创建约束数组
 ```objc
++ (NSArray *)constraintsWithVisualFormat:(NSString *)format options:(NSLayoutFormatOptions)opts metrics:(NSDictionary *)metrics views:(NSDictionary *)views;
 
+* format ：VFL语句
+* opts ：约束类型
+* metrics ：VFL语句中用到的具体数值
+* views ：VFL语句中用到的控件
 ```
 
 ## 使用代码实现AutoLayout的方法3 - Masonry
