@@ -37,7 +37,9 @@
 
 ## TableView - Cell的性能优化
 
-```objc// 定义重用标识NSString *ID = @"cell";```
+```objc
+// 定义重用标识NSString *ID = @"cell";
+```
 
 - 注册某个标识对应的cell类型
 
