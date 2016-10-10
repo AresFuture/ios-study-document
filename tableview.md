@@ -12,4 +12,25 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
     ```
-- 
+## TableView - Cell的循环利用方式1
+
+```objc
+/**
+ * 什么时候调用：每当一个cell进入视野范围内就会调用
+ */
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+ // 1.创建cell
+ static NSString* Identifier = @"identifier";
+ UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+
+ if (cell == nil) {
+ cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:Identifier];
+}
+
+ // 2.设置cell数据
+ return cell;
+
+}
+
+```
