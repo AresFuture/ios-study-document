@@ -76,13 +76,14 @@
 
 ## tableView性能优化 - cell的循环利用方式3
 - 在storyboard中设置UITableView的Dynamic Prototypes Cell
-![](/assets/Snip20150602_152.png)
+![](images/Snip20150602_152.png)
 
 - 设置cell的重用标识![](images/Snip20150602_153.png)
 
 - 在代码中利用重用标识获取cell
 
-```objc// 0.重用标识// 被static修饰的局部变量：只会初始化一次，在整个程序运行过程中，只有一份内存static NSString *ID = @"cell";
+```objc
+// 0.重用标识// 被static修饰的局部变量：只会初始化一次，在整个程序运行过程中，只有一份内存static NSString *ID = @"cell";
 
 // 1.先根据cell的标识去缓存池中查找可循环利用的cellUITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
