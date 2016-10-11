@@ -130,7 +130,7 @@ return cell;
     - 3.在控制器中 - 利用重用标识找到cell 
     - 给cell传递模型数据<br> 
 ![](assets/Snip20150602_301.png) 
-- 4.在XMGDealCell中 
+    - 4.在XMGDealCell中 
     - 将storyboard中的子控件连线到类扩展中<br> ![](assets/Snip20150602_299.png) 
     - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上<br> 
 ![](/assets/Snip20150602_298.png)
