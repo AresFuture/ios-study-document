@@ -93,6 +93,7 @@
 return cell;```## 错误将UIViewController当做UITableViewController来用![](assets/Snip20150602_110.png)
 
 ## UITableView的常见设置
+
 ```objc
 // 分割线颜色self.tableView.separatorColor = [UIColor redColor];
 
