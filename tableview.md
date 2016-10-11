@@ -92,9 +92,12 @@
 
 return cell;```## 错误将UIViewController当做UITableViewController来用![](assets/Snip20150602_110.png)
 
-## UITableView的常见设置```objc// 分割线颜色self.tableView.separatorColor = [UIColor redColor];
+## UITableView的常见设置
+```objc
+// 分割线颜色self.tableView.separatorColor = [UIColor redColor];
 
-// 隐藏分割线self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;```
+// 隐藏分割线self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+```
 
 ## UITableViewCell的常见设置```objc// 取消选中的样式cell.selectionStyle = UITableViewCellSelectionStyleNone;// 设置选中的背景色UIView *selectedBackgroundView = [[UIView alloc] init];selectedBackgroundView.backgroundColor = [UIColor redColor];cell.selectedBackgroundView = selectedBackgroundView;
 
