@@ -181,5 +181,6 @@ return cell;
     - 在控制器中实现tableView:heightForRowAtIndexPath:方法，返回cell的真实高度（模型中的cellHeight属性） 
 
 - storyboard自定义cell 
-    - 代码自定义cell（frame） - 代码自定义cell（Autolayout）
+    - 代码自定义cell（frame） 
+    - 代码自定义cell（Autolayout）
 
