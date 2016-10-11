@@ -76,9 +76,9 @@
 
 ## tableView性能优化 - cell的循环利用方式3
 - 在storyboard中设置UITableView的Dynamic Prototypes Cell
-![](images/Snip20150602_152.png)
+![](assets/Snip20150602_152.png)
 
-- 设置cell的重用标识![](images/Snip20150602_153.png)
+- 设置cell的重用标识![](assets/Snip20150602_153.png)
 
 - 在代码中利用重用标识获取cell
 
