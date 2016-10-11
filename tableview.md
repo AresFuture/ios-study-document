@@ -37,7 +37,8 @@
 
 ## tableView性能优化 - cell的循环利用方式1
 
-```objc/** * 什么时候调用：每当有一个cell进入视野范围内就会调用 */- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // 0.重用标识 // 被static修饰的局部变量：只会初始化一次，在整个程序运行过程中，只有一份内存 static NSString *ID = @"cell";
+```objc
+/** * 什么时候调用：每当有一个cell进入视野范围内就会调用 */- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // 0.重用标识 // 被static修饰的局部变量：只会初始化一次，在整个程序运行过程中，只有一份内存 static NSString *ID = @"cell";
 
  // 1.先根据cell的标识去缓存池中查找可循环利用的cell UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
@@ -45,7 +46,9 @@
 
  // 3.覆盖数据 cell.textLabel.text = [NSString stringWithFormat:@"testdata - %zd", indexPath.row];
 
- return cell;}```## tableView性能优化 - cell的循环利用方式2- 定义一个全局变量
+ return cell;}
+```
+## tableView性能优化 - cell的循环利用方式2- 定义一个全局变量
 
 ```objc// 定义重用标识NSString *ID = @"cell";```
 
