@@ -175,5 +175,6 @@ return cell;
         - 也可以将创建获得cell的代码封装起来（比如cellWithTableView:方法）
 
 - 非等高的cell - xib自定义cell(重点) 
-    - 在模型中增加一个cellHeight属性，用来存放对应cell的高度 - 在cell的模型属性set方法中调用[self layoutIfNeed]方法强制布局，然后计算出模型的cellheight属性值 - 在控制器中实现tableView:estimatedHeightForRowAtIndexPath:方法，返回一个估计高度，比如200 - 在控制器中实现tableView:heightForRowAtIndexPath:方法，返回cell的真实高度（模型中的cellHeight属性） - storyboard自定义cell - 代码自定义cell（frame） - 代码自定义cell（Autolayout）
+    - 在模型中增加一个cellHeight属性，用来存放对应cell的高度 
+    - 在cell的模型属性set方法中调用[self layoutIfNeed]方法强制布局，然后计算出模型的cellheight属性值 - 在控制器中实现tableView:estimatedHeightForRowAtIndexPath:方法，返回一个估计高度，比如200 - 在控制器中实现tableView:heightForRowAtIndexPath:方法，返回cell的真实高度（模型中的cellHeight属性） - storyboard自定义cell - 代码自定义cell（frame） - 代码自定义cell（Autolayout）
 
