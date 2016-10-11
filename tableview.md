@@ -119,7 +119,7 @@ return cell;
 
 ## 自定义cell- `等高的cell` 
 
-- `storyboard自定义cell` - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> ![](images/Snip20150602_305.png) - 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> ![](images/Snip20150602_302.png) - 设置cell的重用标识<br> ![](images/Snip20150602_303.png) - 设置cell的class为XMGDealCell<br> ![](images/Snip20150602_304.png) - 3.在控制器中 - 利用重用标识找到cell - 给cell传递模型数据<br> ![](images/Snip20150602_301.png) - 4.在XMGDealCell中 - 将storyboard中的子控件连线到类扩展中<br> ![](images/Snip20150602_299.png) - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上<br> ![](images/Snip20150602_298.png) ![](images/Snip20150602_300.png)
+- `storyboard自定义cell` - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> ![](assets/Snip20150602_305.png) - 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> ![](images/Snip20150602_302.png) - 设置cell的重用标识<br> ![](images/Snip20150602_303.png) - 设置cell的class为XMGDealCell<br> ![](images/Snip20150602_304.png) - 3.在控制器中 - 利用重用标识找到cell - 给cell传递模型数据<br> ![](images/Snip20150602_301.png) - 4.在XMGDealCell中 - 将storyboard中的子控件连线到类扩展中<br> ![](images/Snip20150602_299.png) - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上<br> ![](images/Snip20150602_298.png) ![](images/Snip20150602_300.png)
 
  - `xib自定义cell` - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> - 2.创建一个xib文件（文件名建议跟cell的类名一样），比如XMGDealCell.xib - 拖拽一个UITableViewCell出来 - 修改cell的class为XMGDealCell - 设置cell的重用标识 - 往cell中添加需要用到的子控件 - 3.在控制器中 - 利用registerNib...方法注册xib文件 - 利用重用标识找到cell（如果没有注册xib文件，就需要手动去加载xib文件） - 给cell传递模型数据<br> - 4.在XMGDealCell中 - 将xib中的子控件连线到类扩展中 - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上 - 也可以将创建获得cell的代码封装起来（比如cellWithTableView:方法）
 
