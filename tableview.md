@@ -52,7 +52,8 @@
 
 - 定义一个全局变量
 
-```objc// 定义重用标识NSString *ID = @"cell";```
+```objc// 定义重用标识NSString *ID = @"cell";
+```
 
 - 注册某个标识对应的cell类型
 
