@@ -119,7 +119,8 @@ return cell;
 
 ## 自定义cell- `等高的cell` 
 
-- `storyboard自定义cell` - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> 
+- `storyboard自定义cell`
+    - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> 
 ![](assets/Snip20150602_305.png) 
 - 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> 
 ![](assets/Snip20150602_302.png) 
