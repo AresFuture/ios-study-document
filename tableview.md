@@ -99,7 +99,8 @@ return cell;```## 错误将UIViewController当做UITableViewController来用![](
 // 隐藏分割线self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 ```
 
-## UITableViewCell的常见设置```objc// 取消选中的样式cell.selectionStyle = UITableViewCellSelectionStyleNone;// 设置选中的背景色UIView *selectedBackgroundView = [[UIView alloc] init];selectedBackgroundView.backgroundColor = [UIColor redColor];cell.selectedBackgroundView = selectedBackgroundView;
+## UITableViewCell的常见设置
+```objc// 取消选中的样式cell.selectionStyle = UITableViewCellSelectionStyleNone;// 设置选中的背景色UIView *selectedBackgroundView = [[UIView alloc] init];selectedBackgroundView.backgroundColor = [UIColor redColor];cell.selectedBackgroundView = selectedBackgroundView;
 
 // 设置默认的背景色cell.backgroundColor = [UIColor blueColor];
 
