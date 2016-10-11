@@ -48,7 +48,9 @@
 
  return cell;}
 ```
-## tableView性能优化 - cell的循环利用方式2- 定义一个全局变量
+## tableView性能优化 - cell的循环利用方式2
+
+- 定义一个全局变量
 
 ```objc// 定义重用标识NSString *ID = @"cell";```
 
