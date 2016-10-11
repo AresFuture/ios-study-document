@@ -122,12 +122,12 @@ return cell;
 - `storyboard自定义cell`
     - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> 
 ![](assets/Snip20150602_305.png) 
-- 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> 
+    - 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> 
 ![](assets/Snip20150602_302.png) 
     - 设置cell的重用标识<br> ![](assets/Snip20150602_303.png) 
     - 设置cell的class为XMGDealCell<br> 
     ![](assets/Snip20150602_304.png) 
-- 3.在控制器中 - 利用重用标识找到cell 
+    - 3.在控制器中 - 利用重用标识找到cell 
     - 给cell传递模型数据<br> 
 ![](assets/Snip20150602_301.png) 
 - 4.在XMGDealCell中 
