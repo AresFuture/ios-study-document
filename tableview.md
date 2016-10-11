@@ -109,7 +109,8 @@ return cell;```## 错误将UIViewController当做UITableViewController来用![](
 
 // 设置默认的背景色UIView *backgroundView = [[UIView alloc] init];backgroundView.backgroundColor = [UIColor greenColor];cell.backgroundView = backgroundView;
 
-// backgroundView的优先级 > backgroundColor// 设置指示器// cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;cell.accessoryView = [[UISwitch alloc] init];```
+// backgroundView的优先级 > backgroundColor// 设置指示器// cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;cell.accessoryView = [[UISwitch alloc] init];
+```
 
 ## 自定义cell- `等高的cell` - `storyboard自定义cell` - 1.创建一个继承自UITableViewCell的子类，比如XMGDealCell<br> ![](images/Snip20150602_305.png) - 2.在storyboard中 - 往cell里面增加需要用到的子控件<br> ![](images/Snip20150602_302.png) - 设置cell的重用标识<br> ![](images/Snip20150602_303.png) - 设置cell的class为XMGDealCell<br> ![](images/Snip20150602_304.png) - 3.在控制器中 - 利用重用标识找到cell - 给cell传递模型数据<br> ![](images/Snip20150602_301.png) - 4.在XMGDealCell中 - 将storyboard中的子控件连线到类扩展中<br> ![](images/Snip20150602_299.png) - 需要提供一个模型属性，重写模型的set方法，在这个方法中设置模型数据到子控件上<br> ![](images/Snip20150602_298.png) ![](images/Snip20150602_300.png)
 
