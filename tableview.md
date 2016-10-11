@@ -57,7 +57,8 @@
 
 - 在数据源方法中返回cell
 
-```objc- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // 1.去缓存池中查找cell UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+```objc
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{ // 1.去缓存池中查找cell UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
  // 2.覆盖数据 cell.textLabel.text = [NSString stringWithFormat:@"testdata - %zd", indexPath.row];
 
