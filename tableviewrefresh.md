@@ -2,5 +2,5 @@
 - 重新刷新屏幕上的所有cell<br>
 
 ```objc
-
+[self.tableView reloadData];
 ```
