@@ -6,4 +6,5 @@
 ```
 - 刷新特定行的cell<br>
 ```objc
+[self.tableView reloadRowsAtIndexPaths:@[NSIndexPath indexPathForRow:0 inSection:0],[NSIndexPath indexPathForRow:1 inSection:0] withRowAnimation:UITableViewRowAnimationLeft];
 ```
